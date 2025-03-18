@@ -22,12 +22,10 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  background: url('../img/Rust-Body-BG.png'), #716c63fb;
-  background-blend-mode: multiply; /* Blend mode */
-  /*--background-color: #ffebd3; /* Background color for the entire website, including individual sections */
-  --default-color: #d1c798; /* Default color used for the majority of the text content across the entire website */
+  background-color: #000000; /* Background color for the entire website, including individual sections */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #fefefe; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ffc451; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #e53d22; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #000000; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #312f2f; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -35,11 +33,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: rgba(255, 255, 255, 0.905);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffc451; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-hover-color: #e53d22; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #000; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #000; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #e53d22; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -147,7 +145,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0.8);
+  --background-color: rgba(199, 199, 199, 0.8);
   --heading-color: #ffffff;
   --contrast-color: #ffffff;
   color: var(--default-color);
@@ -162,8 +160,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 85px;
-  margin-right: 0px;
+  max-height: 70px;
+  margin-right: 10px;
 }
 
 .header .logo h1 {
@@ -252,12 +250,12 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 24px;
+    font-size: 22px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -335,6 +333,15 @@ h6 {
     left: -100%;
     visibility: visible;
   }
+
+  .socialmedia{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
 }
 
 /* Navmenu - Mobile */
@@ -394,7 +401,7 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), white 90%);
+    /* background-color: color-mix(in srgb, var(--accent-color), white 90%); */
   }
 
   .navmenu a i:hover,
@@ -934,7 +941,9 @@ section,
 }
 
 .about .content p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  font-size: 25px;
 }
 /*--------------------------------------------------------------
 # Clients Section

@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Gp Bootstrap Template</title>
+  <title>Hollow Sense Home</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/23d1dec35f.js" crossorigin="anonymous"></script>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -43,24 +46,21 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <img src="assets/img/Logos/Logos Hollow Sense PNG/HollowSense_Logo_Contorno.png" alt="">
+        <img src="assets/img/Logos/Logos Hollow Sense PNG/HollowSense_Logo_Contorno.png" alt="Hollow Sense Logo">
       </a>
-      
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Games<br></a></li>
-          <li><a href="#Story line">Press Kit</a></li>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="games.html">Games<br></a></li>
+          <li><a href="#Death Pilot">Press Kit</a></li>
           <li><a href="#services">Contact</a></li>
-          <li><a href="#Story line">Story Line</a></li>
-          <li><a href="#services">The Enemies</a></li>
-          <li><a href="#portfolio">The World</a></li>
-          <li><a href="#team">The Team</a></li>
+          <a href="https://www.instagram.com/hollowsense.official/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+          <a href="https://www.youtube.com/@HollowSenseOfficial"><i class="fa-brands fa-youtube fa-lg"></i></a>
+          <a href="https://x.com/HollowSense"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+          <a href="https://www.tiktok.com/@hollowsense?_t=ZM-8unBDQGSjJN&_r=1 fa-lg"><i class="fa-brands fa-tiktok"></i></a>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <!-- <a class="btn-getstarted" href="index.html#about" style="font-family: 'Bebas-Neue';">Let's get started</a> -->
-
     </div>
   </header>
 
@@ -68,8 +68,7 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/HS_DP_CONCEPT_ART_FARO_280125.png" alt="" data-aos="fade-in">
+      <img src="assets/img/HS_DP_Cover.png" alt="" data-aos="fade-in">
       <div class="container">
         <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
           <div class="col-xl-6 col-lg-8">
@@ -80,38 +79,34 @@
     </section><!-- /Hero Section -->
     
     <!-- About Section -->
-    <section id="Story line" class="about section">
+    <section id="Death Pilot" class="about section" style='background-image: url("/assets/img/HS_DP_CONCEPT_ART_FARO_280125.png"); background-size: cover;'>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100" style='background-image: url("../img/Rusty_BG.jpg");'>
-
+      <div class="container" data-aos="fade-up" data-aos-delay="100" >
         <div class="row gy-4">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          <div class="col-lg-6 order-1 order-lg-1" >
+            <img src="assets/img/Logos/Logos Death Pilot PNG/DP_Logotipo_Entregable_1_V01.png" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>Story Line</h3> 
-              <p style="font-size: 20px;">
-                Alexandro, a colonizer cloned for the umpteenth time, and Roxana, an AI bonded to him, seek to terraform Reba, 
-                a hostile planet ruled by parasites and other wandering clones. The mysteries of Alex's past unravel as he descends 
-                into the depths of Reba; however, as he interacts with each of these agents, he will question whether he should 
-                escape the planet or save it before being consumed by madness.  
+          <div class="col-lg-6 order-2 order-lg-2 content" style="background-color: rgba(0, 0, 0, 0.4);">
+            <!-- <h3>Death Pilot</h3>  -->
+              <p >
+                <span style="color: #e53d22">Alexandro</span>, a colonizer cloned for the umpteenth time, and Roxana, an AI bonded to him, seek to terraform Reba, 
+                a hostile planet ruled by <span style="color: #e53d22">parasites and other wandering clones</span>. The mysteries of Alex's past unravel as he descends 
+                into the <span style="color: #e53d22">depths of Reba</span>; however, as he interacts with each of these agents, he will question whether he should 
+                <span  style="color: #e53d22">escape the planet</span>  or save it before being <span style="color: #e53d22">consumed by madness</span>.  
               </p>
           </div>
         </div>
       </div>
 
     </section><!-- /About Section -->
-
-
-
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- <section id="services" class="services section"> -->
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>Check our Services</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
@@ -127,7 +122,7 @@
               </a>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
@@ -139,7 +134,7 @@
               </a>
               <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
@@ -151,7 +146,7 @@
               </a>
               <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
@@ -164,7 +159,7 @@
               <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
@@ -177,7 +172,7 @@
               <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
@@ -190,16 +185,14 @@
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Services Section -->
+    </section> -->
+    <!-- /Services Section -->
 
     <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
+    <!-- <section id="call-to-action" class="call-to-action section dark-background">
 
       <img src="assets/img/cta-bg.jpg" alt="">
 
@@ -215,16 +208,16 @@
         </div>
       </div>
 
-    </section><!-- /Call To Action Section -->
+    </section>/Call To Action Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
+      
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Check our Portfolio</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
@@ -235,7 +228,7 @@
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-product">Card</li>
             <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -247,7 +240,7 @@
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
@@ -257,7 +250,7 @@
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
@@ -267,7 +260,7 @@
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
@@ -277,7 +270,7 @@
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
@@ -287,7 +280,7 @@
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
@@ -297,7 +290,7 @@
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
@@ -307,7 +300,7 @@
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
@@ -317,7 +310,7 @@
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
@@ -327,18 +320,17 @@
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-          </div><!-- End Portfolio Container -->
+          </div>
 
         </div>
+      </div> -->
 
-      </div>
-
-    </section><!-- /Portfolio Section -->
+    <!-- </section><!-- /Portfolio Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
+    <!-- <section id="stats" class="stats section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -365,9 +357,9 @@
                     <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
                   </div>
                 </div>
-              </div><!-- End Stats Item -->
+              </div>End Stats Item -->
 
-              <div class="col-lg-6">
+              <!-- <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-journal-richtext flex-shrink-0"></i>
                   <div>
@@ -375,9 +367,9 @@
                     <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
                   </div>
                 </div>
-              </div><!-- End Stats Item -->
+              </div>End Stats Item -->
 
-              <div class="col-lg-6">
+              <!-- <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-headset flex-shrink-0"></i>
                   <div>
@@ -385,9 +377,9 @@
                     <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
                   </div>
                 </div>
-              </div><!-- End Stats Item -->
+              </div>End Stats Item -->
 
-              <div class="col-lg-6">
+              <!-- <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-people flex-shrink-0"></i>
                   <div>
@@ -395,7 +387,7 @@
                     <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
                   </div>
                 </div>
-              </div><!-- End Stats Item -->
+              </div>End Stats Item
 
             </div>
 
@@ -403,12 +395,12 @@
 
         </div>
 
-      </div>
+      </div> 
 
-    </section><!-- /Stats Section -->
+    </section> /Stats Section -->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
+    <!-- <section id="testimonials" class="testimonials section dark-background">
 
       <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
@@ -448,7 +440,7 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
@@ -462,9 +454,9 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
@@ -478,9 +470,9 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
@@ -494,9 +486,9 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
@@ -510,26 +502,26 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item -->
 
-          </div>
+          <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </section>/Testimonials Section -->
 
     <!-- Team Section -->
-    <section id="team" class="team section">
+    <!-- <section id="team" class="team section"> -->
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
         <p>our Team</p>
-      </div><!-- End Section Title -->
+      </div>End Section Title -->
 
-      <div class="container">
+      <!-- <div class="container">
         <div class="row gy-4">
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
@@ -547,7 +539,7 @@
                 <span>Chief Executive Officer</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
@@ -565,7 +557,7 @@
                 <span>Product Manager</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
@@ -583,7 +575,7 @@
                 <span>CTO</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
@@ -601,7 +593,7 @@
                 <span>Accountant</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
         </div>
 
         <div class="row gy-4">
@@ -622,7 +614,7 @@
                 <span>Chief Executive Officer</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
@@ -640,7 +632,7 @@
                 <span>Product Manager</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
@@ -658,7 +650,7 @@
                 <span>CTO</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
@@ -676,11 +668,11 @@
                 <span>Accountant</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
         </div>
       </div>
 
-    </section><!-- /Team Section -->
+    </section>/Team Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -693,9 +685,9 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+        <!-- <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
           <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
+        </div>End Google Maps -->
 
         <div class="row gy-4">
 
@@ -772,8 +764,8 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">GP</span>
+            <a href="index.html">
+              <img style="height: 100px;"  src="assets/img/Logos/Logos Hollow Sense PNG/HollowSense_Logo_Contorno.png" alt="">
             </a>
             <div class="footer-contact pt-3">
               <p>A108 Adam Street</p>
@@ -782,10 +774,10 @@
               <p><strong>Email:</strong> <span>info@example.com</span></p>
             </div>
             <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/hollowsense.official/"><i class="fa-brands fa-instagram" style="color: #ffffff; height: px;"></i></a>
+              <a href="https://www.youtube.com/@HollowSenseOfficial"><i class="fa-brands fa-youtube" style="color: #ffffff; height: px;"></i></a>
+              <a href="https://x.com/HollowSense"><i class="fa-brands fa-x-twitter" style="color: #ffffff; height: px;"></i></a>
+              <a href="https://www.tiktok.com/@hollowsense?_t=ZM-8unBDQGSjJN&_r=1"><i class="fa-brands fa-tiktok" style="color: #ffffff; height: px;"></i></a>
             </div>
           </div>
 
@@ -793,48 +785,24 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="games.html"> Games</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact"> Press Kit</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact"> Contact</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-12 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-
         </div>
       </div>
     </div>
 
     <div class="copyright">
       <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">GP</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Hollow Sense</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
         </div>
       </div>
     </div>
