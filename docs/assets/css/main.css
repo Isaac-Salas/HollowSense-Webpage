@@ -1638,6 +1638,17 @@ section,
   color: var(--accent-color);
 }
 
+.custom-button {
+  background-color: #312f2f; /* Color de fondo normal */
+  border-color: #e53d22; /* Color del borde */
+  color: #ffffff; /* Color del texto */
+}
+
+.custom-button:hover {
+  background-color: #e53d22; /* Cambiar color de fondo al pasar el mouse */
+  border-color: #e64a19; /* Cambiar color del borde al pasar el mouse */
+}
+
 .service-details .help-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);
