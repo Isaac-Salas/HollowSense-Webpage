@@ -42,7 +42,7 @@
 </head>
 
 <body class="index-page">
-  <br>
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
@@ -50,10 +50,10 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="games.html" class="active">Games</a></li>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="games.html">Games<br></a></li>
           <li><a href="presskit.html">Press Kit</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
           <a href="https://www.instagram.com/hollowsense.official/"><i class="fa-brands fa-instagram fa-lg"></i></a>
           <a href="https://www.youtube.com/@HollowSenseOfficial"><i class="fa-brands fa-youtube fa-lg"></i></a>
           <a href="https://x.com/HollowSense"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
@@ -73,9 +73,6 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <br>
-              <br>
-              <h1>OUR Games</h1>
-              <p class="mb-0" style="font-size: 30px;">dive into the <span style="color: #e53d22;">hollow</span>. Seek for the <span style="color: #e53d22;">sense</span>.</p>
             </div>
           </div>
         </div>
@@ -84,111 +81,86 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Games</li>
+            <li class="current">Contact</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
 
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-          <a href="https://store.steampowered.com/app/2885710/Death_Pilot/"><img src="assets/img/HS_DP_Cover.png" alt="" width="100%"></a>
-          <div>
-            <iframe src="https://store.steampowered.com/widget/2885710/" frameborder="10" width="100%" height="270"></iframe>
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>108 Porta Parma, León, Guanajuato 37134</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <h3>Whatsapp</h3>
+                <p>+52 461 264 8721</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>contact@hollowsense.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
           </div>
+
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
 
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/CapGames/DP/Cap01.png" alt="">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/CapGames/DP/CapGif01.gif" alt="">
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/CapGames/DP/Cap02.png" alt="">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/CapGames/DP/Cap03.png" alt="">
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/CapGames/DP/CapGif02.gif" alt="">
-                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/CapGames/DP/Cap04.png" alt="">
+                  <button type="submit" style="font-size: 38px;">Send Message</button>
                 </div>
 
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
+            </form>
+          </div><!-- End Contact Form -->
 
-          <div class="col-lg-4">
-            <div class="portfolio-description">
-              <h3 style="color: #e53d22">Story Sumary</h3>
-              <p>
-                Looking for a new earth the program NEO-GAIA create clones to help in the investigation and conquering of a new planet. 
-                After many years of looking, tribulation Lucry Gokstad found REBA. Earth created a diplomatic approach with the people of REBA. 
-                This people accepted the Earthlings with open arms, teaching them their culture and tradition. Not knowing that all this 
-                knowledge would be used against them. What was supposed to be a gentle and sympathetic conection turn into a genocide when 
-                the NEO-GAIA ejecutives decided this was their new earth. <br><br>
-
-
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="portfolio-description">
-          <p>
-            Clones were send to kill and terraform REBA to turn into EARTH BETA.
-                After many years of war. Earth decide to send their ultimate weapon: Teratogens, a biological weapon created with the only objective to destroy 
-                the Rebarians. The introduction of this weapon brought the end of a war. Earth could feel their victory. Rebarians feeling close their defeat, 
-                they biological alter the Teratogens to destroy the clones that betrayed them. Teratogens went from just destroying Rebarians to a 
-                necessity to eat human's flesh. Rebarians were destroyed but the only rulers of Reba became the Teratogens, making impossible for Reba to
-                become the new earth. REBA was left forgotten but the clones does not know that.
-          </p>
-          <br>
-          <br>
-          <h3 style="color: #e53d22">Features</h3>
-            <ul>
-              <br>
-              <li><i class="fas fa-bolt"></i> <span>Tense First-Person Survival: Every step could be your last. Conserve your resources, make every shot count, and navigate a hostile environment where danger lurks in every shadow.</span></li><br>
-              <li><i class="fas fa-battery-full"></i> <span>Strategic Battery Management: Your life depends on energy — literally. Collect and distribute power across your battery modules to keep crucial systems online. Choose wisely; running out of energy might mean sealing your fate.</span></li><br>
-              <li><i class="fas fa-globe"></i></i> <span>Immersive, Oppressive Atmosphere: Dive into a world drenched in tension and mystery. The environment reacts subtly to your presence, building an eerie sense of unease as you unravel its dark secrets.</span></li><br>
-              <li><i class="fas fa-puzzle-piece"></i> <span>Resourceful Exploration: Survival isn't just about shooting — it's about managing what little you have. Scour every corner for precious energy, hidden tools, and clues that could mean the difference between escape and oblivion.</span></li><br>
-              <li><i class="fas fa-film"></i> <span>Unravel a Cryptic Narrative: The story won't reveal itself easily. Piece together fragmented clues scattered across a desolate world and uncover the truth behind the shadows.</span></li><br>
-              <li><i class="fas fa-star"></i> <span>A World of Unfettered Imagination: Death Pilot draws from the essence of classic survival horror while crafting a wholly original universe. Every decision, every moment, shapes your fate.</span></li>
-            </ul>
-        </div>
+
       </div>
-    </section><!-- /Portfolio Details Section -->
+
+    </section><!-- /Contact Section -->
 
   </main>
 
@@ -219,9 +191,9 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="index.html"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Games</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="games.html"> Games</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="presskit.html"> Press Kit</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="contact.html"> Contact</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact"> Contact</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
             </ul>
           </div>
@@ -242,7 +214,6 @@
     </div>
 
   </footer>
-
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
