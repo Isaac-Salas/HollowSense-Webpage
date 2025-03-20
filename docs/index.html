@@ -717,8 +717,8 @@
 
           </div>
 
-          <!-- <div class="col-lg-8">
-            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-8">
+            <form id="contact-form" class="php-email-form" action="https://formspree.io/f/mvgkkpoo" method="POST" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
@@ -733,47 +733,16 @@
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <!-- <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
                   <button type="submit">Send Message</button>
                 </div>
               </div>
             </form>
-          
-            <script>
-              document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-            
-                const formData = new FormData(this);
-                const data = {};
-                formData.forEach((value, key) => {
-                  data[key] = value;
-                });
-            
-                fetch('https://us-central1-tu-proyecto-id.cloudfunctions.net/sendEmail', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json',
-                  },
-                  body: JSON.stringify(data),
-                })
-                .then(response => response.text())
-                .then(message => {
-                  document.querySelector('.sent-message').style.display = 'block';
-                })
-                .catch(error => {
-                  document.querySelector('.error-message').style.display = 'block';
-                  console.error('Error:', error);
-                });
-              });
-            </script>
-          </div>End Contact Form -->
-
+          </div>
         </div>
-
       </div>
-
     </section><!-- /Contact Section -->
 
   </main>
