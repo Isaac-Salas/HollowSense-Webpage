@@ -717,10 +717,8 @@
 
           </div>
 
-
-          <!-- Email form-->
-          <div class="col-lg-8">
-            <form id="contact-form" class="php-email-form" action="//formsubmit.co/contact@hollowsense.com" method="POST" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-lg-8">
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
@@ -732,28 +730,27 @@
                   <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                 </div>
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
                 <div class="col-md-12 text-center">
-                  <!-- <div class="loading">Loading</div>
+                  <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
-                  <input type="submit" value="Send Message">
-                  <!-- <button type="submit">Send Message</button> -->
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
                 </div>
               </div>
             </form>
           
-            <!-- <script>
+            <script>
               document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-          
+            
                 const formData = new FormData(this);
                 const data = {};
                 formData.forEach((value, key) => {
                   data[key] = value;
                 });
-          
+            
                 fetch('https://us-central1-tu-proyecto-id.cloudfunctions.net/sendEmail', {
                   method: 'POST',
                   headers: {
