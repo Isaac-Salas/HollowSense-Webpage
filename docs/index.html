@@ -694,10 +694,10 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Address</h3>
-                <p>108 Porta Parma, León, Guanajuato 37134</p>
+                <h3>Located</h3>
+                <p>León, Guanajuato</p>
               </div>
-            </div><!-- End Info Item -->
+            </div> <!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="fa-brands fa-whatsapp"></i>
@@ -718,35 +718,56 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
-
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                 </div>
-
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
-
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit" style="font-size: 38px;">Send Message</button>
+                  <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
+          
+            <script>
+              document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+          
+                const formData = new FormData(this);
+                const data = {};
+                formData.forEach((value, key) => {
+                  data[key] = value;
+                });
+          
+                fetch('https://us-central1-tu-proyecto-id.cloudfunctions.net/sendEmail', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(data),
+                })
+                .then(response => response.text())
+                .then(message => {
+                  document.querySelector('.sent-message').style.display = 'block';
+                })
+                .catch(error => {
+                  document.querySelector('.error-message').style.display = 'block';
+                  console.error('Error:', error);
+                });
+              });
+            </script>
           </div><!-- End Contact Form -->
 
         </div>
@@ -767,9 +788,9 @@
               <img style="height: 100px;"  src="assets/img/Logos/Logos Hollow Sense PNG/HollowSense_Logo_Contorno.png" alt="">
             </a>
             <div class="footer-contact pt-3">
-              <p>108 Porta Parma</p>
-              <p>León, Guanajuato 37134</p>
-              <p class="mt-3"><strong>Whatsapp:</strong> <span>+52 461 264 8721</span></p>
+              <!-- <p>108 Porta Parma</p> -->
+              <p>León, Guanajuato</p>
+              <p class="mt-3">Only <strong><i class="bi bi-whatsapp"></i></strong> <span>+52 461 264 8721</span></p>
               <p><strong>Email:</strong> <span>contact@hollowsense.com</span></p>
             </div>
             <div class="social-links d-flex mt-4">

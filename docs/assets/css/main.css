@@ -1740,3 +1740,13 @@ section,
 .service-details p {
   font-size: 25px; /* Tamaño del contenido */
 }
+
+/* Ajustar el tamaño de las imágenes del equipo */
+.team img {
+  max-width: 300px; /* Ancho máximo de las imágenes */
+  max-height: 300px; /* Alto máximo de las imágenes */
+  width: auto; /* Mantener la proporción */
+  height: auto; /* Mantener la proporción */
+  display: block; /* Asegurar que las imágenes se comporten como bloques */
+  margin: 0 auto; /* Centrar las imágenes */
+}
